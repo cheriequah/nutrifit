@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NUTRIFIT</string>
+    <string name="next_btn"><![CDATA[Next >]]></string>
+    <string name="haveAccount">Already have an account? Sign In</string>
+    <string name="btnSignIn">Sign In</string>
+    <string name="noAccount">Don\'t have an account yet? Sign Up</string>
+</resources>
