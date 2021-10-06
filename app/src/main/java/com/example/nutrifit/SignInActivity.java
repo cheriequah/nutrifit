@@ -23,11 +23,11 @@ public class SignInActivity extends AppCompatActivity {
 
         mSignUp_TextView = findViewById(R.id.signUp_textView);
 
-        String text1 = getResources().getString(R.string.noAccount);
+        String text = getResources().getString(R.string.noAccount);
 
-        SpannableString ss1 = new SpannableString(text1);
+        SpannableString ss = new SpannableString(text);
 
-        ClickableSpan clickableSpan1 = new ClickableSpan() {
+        ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
                 Intent i = new Intent(getApplicationContext(), SignUpActivity.class);
@@ -41,9 +41,9 @@ public class SignInActivity extends AppCompatActivity {
                 ds.setUnderlineText(false);
             }
         };
-        ss1.setSpan(clickableSpan1, 27, 34, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss.setSpan(clickableSpan, 27, 34, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-        mSignUp_TextView.setText(ss1);
+        mSignUp_TextView.setText(ss);
         mSignUp_TextView.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }
