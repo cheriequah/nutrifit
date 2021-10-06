@@ -23,27 +23,27 @@ public class SignInActivity extends AppCompatActivity {
 
         mSignUp_TextView = findViewById(R.id.signUp_textView);
 
-        String text = getResources().getString(R.string.noAccount);
+        String text1 = getResources().getString(R.string.noAccount);
 
-        SpannableString ss = new SpannableString(text);
+        SpannableString ss1 = new SpannableString(text1);
 
-        ClickableSpan clickableSpan = new ClickableSpan() {
+        ClickableSpan clickableSpan1 = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                //Intent i = new Intent(MainActivity.this, SignInActivity.class);
-                //startActivity(i);
+                Intent i = new Intent(getApplicationContext(), SignUpActivity.class);
+                startActivity(i);
             }
 
             @Override
             public void updateDrawState(@NonNull TextPaint ds) {
                 super.updateDrawState(ds);
-                ds.setColor(getResources().getColor(R.color.green));
+                ds.setColor(getColor(R.color.green));
                 ds.setUnderlineText(false);
             }
         };
-        ss.setSpan(clickableSpan, 28, 35, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss1.setSpan(clickableSpan1, 27, 34, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-        mSignUp_TextView.setText(ss);
+        mSignUp_TextView.setText(ss1);
         mSignUp_TextView.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }

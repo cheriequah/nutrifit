@@ -8,7 +8,7 @@
     android:gravity="center"
     android:layout_marginLeft="40dp"
     android:layout_marginRight="40dp"
-    tools:context=".MainActivity">
+    tools:context=".SignUpActivity">
 
     <TextView
         android:layout_width="wrap_content"
