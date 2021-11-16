@@ -1,5 +1,6 @@
 package com.example.nutrifit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,6 +15,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.Formatter;
@@ -44,6 +48,34 @@ public class CalorieCalculator extends AppCompatActivity implements AdapterView.
         mSpinnerGoal = findViewById(R.id.goal_spinner);
         mCalculateCalorie = findViewById(R.id.calculate_calorie_btn);
         mResCalorie = findViewById(R.id.calorie_calculated);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+
+        bottomNavigationView.setSelectedItemId(R.id.nav_calculator);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.nav_food:
+                        startActivity(new Intent(getApplicationContext()
+                                ,SearchMeals.class));
+                        return true;
+                    case R.id.nav_tips:
+                        startActivity(new Intent(getApplicationContext()
+                                ,FoodTips.class));
+                        return true;
+                    case R.id.nav_calculator:
+                        return true;
+                    case R.id.nav_profile:
+                        startActivity(new Intent(getApplicationContext()
+                                ,Profile.class));
+                        return true;
+
+                }
+                return false;
+            }
+        });
 
         //Listener for spinner
         mSpinnerGender.setOnItemSelectedListener(CalorieCalculator.this);
@@ -179,10 +211,6 @@ public class CalorieCalculator extends AppCompatActivity implements AdapterView.
         }
         if(id == R.id.tips){
             Intent i = new Intent(CalorieCalculator.this, FoodTips.class);
-            startActivity(i);
-        }
-        if(id == R.id.calorie){
-            Intent i = new Intent(CalorieCalculator.this, CalorieCalculator.class);
             startActivity(i);
         }
         if(id == R.id.profile){
