@@ -1,7 +1,12 @@
 package com.example.nutrifit;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -23,6 +28,8 @@ public class CalorieCalculator extends AppCompatActivity implements AdapterView.
     private Spinner mSpinnerGoal;
     private Button mCalculateCalorie;
     private TextView mResCalorie;
+
+    private final static String SP_FILE_NAME = "com.example.nutrifit.sharedpreference";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -135,6 +142,10 @@ public class CalorieCalculator extends AppCompatActivity implements AdapterView.
 
                 formatter.format("%.1f", goal);
                 mResCalorie.setText(formatter.toString());
+
+                SharedPreferences.Editor editor = getSharedPreferences(SP_FILE_NAME, MODE_PRIVATE).edit();
+                editor.putString("calories", formatter.toString());
+                editor.apply();
             }
         });
 
@@ -148,5 +159,36 @@ public class CalorieCalculator extends AppCompatActivity implements AdapterView.
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if(id == R.id.logout){
+            SharedPreferences.Editor editor = getSharedPreferences(SP_FILE_NAME, MODE_PRIVATE).edit();
+            editor.clear();
+            editor.commit();
+            Intent i = new Intent(CalorieCalculator.this, SignInActivity.class);
+            startActivity(i);
+        }
+        if(id == R.id.tips){
+            Intent i = new Intent(CalorieCalculator.this, FoodTips.class);
+            startActivity(i);
+        }
+        if(id == R.id.calorie){
+            Intent i = new Intent(CalorieCalculator.this, CalorieCalculator.class);
+            startActivity(i);
+        }
+        if(id == R.id.profile){
+            Intent i = new Intent(CalorieCalculator.this, Profile.class);
+            startActivity(i);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

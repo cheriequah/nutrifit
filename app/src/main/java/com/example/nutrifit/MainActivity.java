@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
     private TextInputEditText mName_EditText, mEmail_EditText, mDOB_EditText, mPassword_EditText, mRePassword_EditText;
     private Button mNext_Btn;
     private DBHelper DB;
+
+    private final static String SP_FILE_NAME = "com.example.nutrifit.sharedpreference";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

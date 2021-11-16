@@ -19,7 +19,6 @@ public class SignUpActivity extends AppCompatActivity {
 
     private TextInputEditText mHeight_EditText, mWeight_EditText;
     private Button mSignUp_Btn;
-    private RadioGroup mRadioGroup;
     private RadioButton mRadioBtn_Goal1, mRadioBtn_Goal2, mRadioBtn_Goal3, mRadioBtn_Exercise1, mRadioBtn_Exercise2, mRadioBtn_Exercise3, mRadioBtn_Male, mRadioBtn_Female;
     private DBHelper DB;
 
@@ -32,7 +31,6 @@ public class SignUpActivity extends AppCompatActivity {
 
         mSignUp_Btn = findViewById(R.id.signUp_btn);
 
-        mRadioGroup = findViewById(R.id.radioGrp_sex);
         mRadioBtn_Goal1 = findViewById(R.id.radioBtn_goal1);
         mRadioBtn_Goal2 = findViewById(R.id.radioBtn_goal2);
         mRadioBtn_Goal3 = findViewById(R.id.radioBtn_goal3);

@@ -24,30 +24,32 @@
             android:id="@+id/radioBtn_goal1"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:checked="true"
-            android:text="Lose Weight"
-            android:onClick="checkGoal"/>
+            android:checked="false"
+            android:text="Lose Weight" />
 
         <RadioButton
             android:id="@+id/radioBtn_goal2"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Maintain Weight"
-            android:onClick="checkGoal"/>
+            android:checked="false"
+            android:text="Maintain Weight" />
 
         <RadioButton
             android:id="@+id/radioBtn_goal3"
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:linksClickable="true"
+            android:checked="false"
             android:text="Gain Weight"
-            android:onClick="checkGoal"/>
+             />
     </RadioGroup>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="2. How often you exercise weekly?"/>
+        android:text="2. How often you exercise weekly?"
+        android:textIsSelectable="true" />
 
     <RadioGroup
         android:id="@+id/radioGrp_exercise"
@@ -59,23 +61,22 @@
             android:id="@+id/radioBtn_exercise1"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:checked="true"
-            android:text="0 times"
-            android:onClick="checkExercise"/>
+            android:checked="false"
+            android:text="0 times" />
 
         <RadioButton
             android:id="@+id/radioBtn_exercise2"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="1-3 times"
-            android:onClick="checkExercise"/>
+            android:checked="false" />
 
         <RadioButton
             android:id="@+id/radioBtn_exercise3"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="3-5 times"
-            android:onClick="checkExercise"/>
+            android:checked="false" />
     </RadioGroup>
 
     <TextView
@@ -96,16 +97,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="40dp"
-            android:checked="true"
-            android:text="Male"
-            android:onClick="checkGender"/>
+            android:checked="false"
+            android:text="Male" />
 
         <RadioButton
             android:id="@+id/radioBtn_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female"
-            android:onClick="checkGender"/>
+            android:checked="false" />
     </RadioGroup>
 
     <TextView

@@ -32,6 +32,13 @@ public class SignInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_in);
         getSupportActionBar().hide();
 
+        /*
+        SharedPreferences sp = getSharedPreferences(SP_FILE_NAME, MODE_PRIVATE);
+        if(sp.getBoolean("isLoggedIn", true)) {
+            Intent i = new Intent(SignInActivity.this, SearchMeals.class);
+            startActivity(i);
+        }
+        */
         mSignUp_TextView = findViewById(R.id.signUp_textView);
         mEmail_SignIn = findViewById(R.id.email_signIn);
         mPasswordSignIn = findViewById(R.id.password_signIn);
@@ -73,9 +80,9 @@ public class SignInActivity extends AppCompatActivity {
                 else {
                     Boolean checkEmailPw = DB.checkEmailPassword(email, password);
                     if(checkEmailPw == true) {
+
                         SharedPreferences.Editor editor = getSharedPreferences(SP_FILE_NAME, MODE_PRIVATE).edit();
                         editor.putString("email", email);
-                        editor.putString("password", password);
                         editor.putBoolean("isLoggedIn", true);
                         editor.apply();
 

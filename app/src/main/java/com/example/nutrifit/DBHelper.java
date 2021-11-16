@@ -62,18 +62,20 @@ public class DBHelper extends SQLiteOpenHelper {
         return cursor.getCount() > 0;
     }
 /*
-    public String getGoal() throws SQLException {
-        Integer goal = null;
-        Cursor cursor = this.getReadableDatabase().query(
-                "users", new String[] { goal },
-                null, null, null, null, null);
-        if (cursor.moveToFirst()) {
-            do {
-                goal = cursor.getInt(1);
-            } while (cursor.moveToNext());
+    public boolean getUserName(String email, String pass){
+        //HashMap<String, String> user = new HashMap<String, String>();
+        String selectQuery = "SELECT * FROM users WHERE email" + " = " + "'"+email+"'" + " and " + "password" + " = " + "'"+pass+"'";
+
+        SQLiteDatabase MyDB = this.getReadableDatabase();
+        Cursor cursor = MyDB.rawQuery(selectQuery, null);
+        // Move to first row
+        cursor.moveToFirst();
+        if (cursor.getCount() > 0) {
+            return  new UserDetails(cursor.getString(cursor.getColumnIndex()),true);
         }
         cursor.close();
+        MyDB.close();
 
-        return name;
+        return false;
     }*/
 }

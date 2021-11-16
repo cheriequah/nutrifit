@@ -24,16 +24,13 @@
             android:name=".SearchMeals"
             android:exported="true" />
         <activity
-            android:name=".DailyMeals"
-            android:exported="true" />
-        <activity
             android:name=".SignUpActivity"
             android:exported="true" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SignInActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
