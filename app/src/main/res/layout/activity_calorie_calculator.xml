@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="402dp"
+      android:layout_height="400dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="50dp"
+      app:cardBackgroundColor="@color/white"
+      app:cardCornerRadius="20dp"
+      app:cardElevation="10dp"
+      app:cardMaxElevation="12dp"
+      app:cardPreventCornerOverlap="true"
+      app:cardUseCompatPadding="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="155dp"
+        android:text="Calorie Calculator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Age :" />
+
+    <EditText
+        android:id="@+id/calorie_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:text="Weight :" />
+
+    <EditText
+        android:id="@+id/calorie_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:hint="kilograms"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="140dp"
+        android:text="Height :" />
+
+    <EditText
+        android:id="@+id/calorie_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="125dp"
+        android:ems="10"
+        android:hint="centimeters"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="180dp"
+        android:text="Gender:" />
+
+    <Spinner
+        android:id="@+id/gender_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="175dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="220dp"
+        android:text="Activity:" />
+
+    <Spinner
+        android:id="@+id/activity_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="215dp" />
+
+    <TextView
+        android:id="@+id/goal_calorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="260dp"
+        android:text="Goal:" />
+
+    <Spinner
+        android:id="@+id/goal_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="255dp" />
+
+    <Button
+        android:id="@+id/calculate_calorie_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:text="Calculate" />
+
+
+  </androidx.cardview.widget.CardView>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="450dp"
+      android:text="Calorie Needed :" />
+
+  <TextView
+      android:id="@+id/calorie_calculated"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="150dp"
+      android:layout_marginTop="450dp"
+      android:ems="10"
+      android:inputType="number"
+      android:textSize="14sp" />
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/bottomNav" android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginTop="850dp"
+      android:background="#F0F8E3"
+      app:itemTextColor="@color/black"
+      app:menu="@menu/menu" />
+
+</RelativeLayout>

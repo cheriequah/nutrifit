@@ -5,11 +5,32 @@
       <map>
         <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14635416666666667" />
         <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable/edit_round_corner.xml" value="0.17962962962962964" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.14635416666666667" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable/ic_baseline_fastfood_24.xml" value="0.14635416666666667" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.14635416666666667" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable/ic_baseline_qr_code_scanner_24.xml" value="0.14635416666666667" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.14739583333333334" />
         <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14635416666666667" />
         <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable/round_btn.xml" value="0.14635416666666667" />
         <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable/round_corner.xml" value="0.14635416666666667" />
-        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable/search_layout.xml" value="0.14739583333333334" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/drawable/serving_layout.xml" value="0.14739583333333334" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/activity_add_meal.xml" value="0.4429065743944637" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/activity_calorie_calculator.xml" value="0.4" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/activity_daily_meal.xml" value="0.2" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/activity_profile.xml" value="0.4" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/activity_search_meal.xml" value="0.25" />
         <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/activity_sign_up.xml" value="0.4" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/activity_tips.xml" value="0.4" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/dialog_dob.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/food_list.xml" value="0.5817245817245817" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/test.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/layout/video_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/menu/main.xml" value="0.264" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/menu/menu.xml" value="0.4" />
+        <entry key="..\:/Android/Nutrifit/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
       </map>
     </option>
   </component>

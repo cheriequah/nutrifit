@@ -4,4 +4,5 @@
     <string name="haveAccount">Already have an account? Sign In</string>
     <string name="btnSignIn">Sign In</string>
     <string name="noAccount">Don\'t have an account yet? Sign Up</string>
+    <string name="date_picker_title">Date of Birth:</string>
 </resources>

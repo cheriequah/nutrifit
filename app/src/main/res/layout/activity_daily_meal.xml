@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".DailyMeals">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="25dp"
+                android:text="Today's Meal"
+                android:textSize="23sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:maxHeight="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/breakfast" />
+
+            <TextView
+                android:id="@+id/breakfast_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="70dp"
+                android:background="#45000000"
+                android:fontFamily="sans-serif-black"
+                android:text="Breakfast"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/add_breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="252dp"
+                android:layout_marginTop="230dp"
+                android:clickable="true"
+                android:onClick="addButton1"
+                app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+            <TextView
+                android:id="@+id/calorie_breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="230dp"
+                android:text="0 kcal" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="260dp"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:maxHeight="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lunch" />
+
+            <TextView
+                android:id="@+id/lunch_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="260dp"
+                android:background="#45000000"
+                android:fontFamily="sans-serif-black"
+                android:text="Lunch"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/add_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="252dp"
+                android:layout_marginTop="420dp"
+                android:clickable="true"
+                android:onClick="addButton2"
+                app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+            <TextView
+                android:id="@+id/calorie_lunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="420dp"
+                android:text="0 kcal" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450dp"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:maxHeight="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/snack" />
+
+            <TextView
+                android:id="@+id/snack_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="450dp"
+                android:background="#45000000"
+                android:fontFamily="sans-serif-black"
+                android:text="Snack"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+
+            <ImageView
+                android:id="@+id/add_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="252dp"
+                android:layout_marginTop="610dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+            <TextView
+                android:id="@+id/calorie_snack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="610dp"
+                android:text="0 kcal" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="640dp"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:maxHeight="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/meatballs" />
+
+            <TextView
+                android:id="@+id/dinner_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="640dp"
+                android:background="#45000000"
+                android:fontFamily="sans-serif-black"
+                android:text="Dinner"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/add_icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="252dp"
+                android:layout_marginTop="800dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+
+            <TextView
+                android:id="@+id/calorie_dinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="800dp"
+                android:text="0 kcal" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="850dp"
+                android:background="#F0F8E3"
+                app:itemTextColor="@color/black"
+                app:menu="@menu/menu" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

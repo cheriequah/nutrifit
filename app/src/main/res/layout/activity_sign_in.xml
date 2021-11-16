@@ -24,6 +24,7 @@
         android:layout_marginBottom="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_signIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -36,6 +37,7 @@
         android:layout_marginBottom="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_signIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -50,6 +52,7 @@
         android:layout_marginBottom="15dp"/>
 
     <Button
+        android:id="@+id/signIn_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnSignIn"

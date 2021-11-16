@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="1. What's your goal?"/>
+
+    <RadioGroup
+        android:id="@+id/radiogrp_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/radioBtn_goal1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:checked="true"
+            android:text="Lose Weight"
+            android:onClick="checkGoal"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn_goal2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Maintain Weight"
+            android:onClick="checkGoal"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn_goal3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Gain Weight"
+            android:onClick="checkGoal"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="2. How often you exercise weekly?"/>
+
+    <RadioGroup
+        android:id="@+id/radioGrp_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:id="@+id/radioBtn_exercise1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:checked="true"
+            android:text="0 times"
+            android:onClick="checkExercise"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn_exercise2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="1-3 times"
+            android:onClick="checkExercise"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn_exercise3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="3-5 times"
+            android:onClick="checkExercise"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="3. Sex"/>
+
+    <RadioGroup
+        android:id="@+id/radioGrp_sex"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioBtn_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:checked="true"
+            android:text="Male"
+            android:onClick="checkGender"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:onClick="checkGender"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="4. Height"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:background= "@drawable/edit_round_corner"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="5. Weight"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:background= "@drawable/edit_round_corner"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signUp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"/>
+
+</LinearLayout>
