@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_tips"
+        android:title="@string/tips"
+        android:icon="@drawable/ic_baseline_emoji_objects_24" />
+
+    <item
+        android:id="@+id/nav_food"
+        android:title="@string/search_food"
+        android:icon="@drawable/ic_baseline_fastfood_24" />
+
+    <item
+        android:id="@+id/nav_calculator"
+        android:title="@string/calorie_calculator"
+        android:icon="@drawable/ic_baseline_calculate_24" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_baseline_person_outline_24" />
+
+</menu>
