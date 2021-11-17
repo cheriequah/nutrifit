@@ -191,7 +191,7 @@ public class SearchMeals extends AppCompatActivity {
                 headers.put("x-app-id", APP_ID);
                 headers.put("x-remote-user-id", APP_ID);
                 headers.put("x-app-key", API_KEY);
-                //Log.d("authtest", "msg");
+                Log.d("authtest", "msg");
                 return headers;
             }
         };

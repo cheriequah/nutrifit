@@ -28,8 +28,7 @@
                 android:layout_marginTop="50dp"
                 android:gravity="center"
                 android:onClick="browser1"
-                android:text="@string/_28_health_and_nutrition_tips_based_on_scientific_evidence"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:text="@string/_28_health_and_nutrition_tips_based_on_scientific_evidence" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -38,8 +37,7 @@
                 android:layout_marginTop="50dp"
                 android:gravity="center"
                 android:onClick="browser2"
-                android:text="@string/health_tips_for_healthy_lifestyle"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:text="@string/health_tips_for_healthy_lifestyle" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -48,8 +46,7 @@
                 android:layout_marginTop="50dp"
                 android:gravity="center"
                 android:onClick="browser3"
-                android:text="@string/healthy_eating_and_physical_activity_for_life"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:text="@string/healthy_eating_and_physical_activity_for_life" />
 
 
         </LinearLayout>
@@ -82,6 +79,7 @@
         android:background="#F0F8E3"
         app:itemTextColor="@color/black"
         app:menu="@menu/menu" />
+
 
 
 </RelativeLayout>
