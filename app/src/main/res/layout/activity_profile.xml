@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="112dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="145dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+
+            android:src="@drawable/profile" />
+
+
+        <TextView
+            android:id="@+id/name_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="150dp" />
+
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="150dp"
+            android:text="Email :" />
+
+        <TextView
+            android:id="@+id/email_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="150dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="402dp"
+            android:layout_height="380dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="50dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="140dp"
+                android:text="BMI Calculator" />
+
+            <ToggleButton
+                android:id="@+id/toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="90dp"
+                android:checked="true"
+                android:textOff="Imperial Units"
+                android:textOn="Metric Units" />
+
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="130dp"
+                android:text="Weight :" />
+
+            <EditText
+                android:id="@+id/weight_kg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="115dp"
+                android:ems="10"
+                android:hint="kg"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/weight_lbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="115dp"
+                android:ems="10"
+                android:hint="lbs"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="180dp"
+                android:text="Height :" />
+
+            <EditText
+                android:id="@+id/height_cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="165dp"
+                android:ems="10"
+                android:hint="cm"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/height_ft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="165dp"
+                android:ems="5"
+                android:hint="ft"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/height_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="165dp"
+                android:ems="5"
+                android:hint="in"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/calculate_bmi_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="90dp"
+                android:text="Calculate" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/activity_main_resultcard"
+            android:layout_width="402dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="570dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="56dp"
+            app:cardCornerRadius="6dp"
+            app:cardMaxElevation="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="BMI"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/activity_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textSize="16sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="402dp"
+            android:layout_height="189dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="670dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+
+            <TextView
+                android:id="@+id/calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:text="Total Calories" />
+
+
+            <TextView
+                android:id="@+id/goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Daily Goal :" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="850dp"
+            android:background="#F0F8E3"
+            app:itemTextColor="@color/black"
+            app:menu="@menu/menu" />
+
+    </RelativeLayout>
+
+</ScrollView>
