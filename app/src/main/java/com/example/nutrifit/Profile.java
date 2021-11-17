@@ -92,7 +92,7 @@ public class Profile extends AppCompatActivity {
             public void onClick(View view) {
                 if (MetricUnits) {
                     if (weightKgForEditText.length() == 0 || heightCmForEditText.length() == 0) {
-                        Toast.makeText(Profile.this, "Use the Weight and the Height to Calculate com.example.a0.MainActivity.BMI", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Profile.this, "Please enter the weight and height", Toast.LENGTH_SHORT).show();
                     } else {
                         double heightInCms = Double.parseDouble(heightCmForEditText.getText().toString());
                         double weightInKgs = Double.parseDouble(weightKgForEditText.getText().toString());
@@ -102,7 +102,7 @@ public class Profile extends AppCompatActivity {
                     }
                 } else {
                     if (weightLbsForEditText.length() == 0 || heightFtForEditText.length() == 0 || heightInForEditText.length() == 0) {
-                        Toast.makeText(Profile.this, "Use the Weight and the Height to Calculate com.example.a0.MainActivity.BMI", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Profile.this, "Please enter the weight and height", Toast.LENGTH_SHORT).show();
                     } else {
                         double heightFeet = Double.parseDouble(heightFtForEditText.getText().toString());
                         double heightInches = Double.parseDouble(heightInForEditText.getText().toString());
