@@ -92,14 +92,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                     if(password.equals(repassword) && isPasswordValid(password)) {
                         Boolean checkEmail = DB.checkEmail(email);
                         if(checkEmail == false) {
-                            /*
-                            Boolean insertData = DB.insertData(name, email, DOB, password);
-                            if(insertData == true) {
-                                Toast.makeText(MainActivity.this, "Registration is Successful", Toast.LENGTH_SHORT).show();
-                            }
-                            else {
-                                Toast.makeText(MainActivity.this, "Registration is Unsuccessful", Toast.LENGTH_SHORT).show();
-                            }*/
+
                             //parse the input from mainpage to sign up page
                             Intent i = new Intent(MainActivity.this, SignUpActivity.class);
                             i.putExtra("name", name);

@@ -133,7 +133,8 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="140dp"
-        android:text="Calculate" />
+        android:text="Calculate"
+        />
 
 
   </androidx.cardview.widget.CardView>
@@ -143,7 +144,7 @@
       android:layout_height="wrap_content"
       android:layout_marginStart="30dp"
       android:layout_marginTop="450dp"
-      android:text="Calorie Needed :" />
+      android:text="Calories Needed :" />
 
   <TextView
       android:id="@+id/calorie_calculated"

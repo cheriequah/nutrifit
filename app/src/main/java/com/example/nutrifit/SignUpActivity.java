@@ -54,22 +54,8 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
-                //float height = Float.parseFloat(String.valueOf(mHeight_EditText.getText()));
-                //float weight = Float.parseFloat(String.valueOf(mWeight_EditText.getText()));
-
                 insertData();
-                /*
-                Boolean insertData = DB.insertData(newName, newEmail, newDOB, newPassword, goal, exercise, gender, height, weight);
-                if (insertData == true) {
-                    Toast.makeText(SignUpActivity.this, "Registered Succesfully", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(SignUpActivity.this, SignInActivity.class);
-                    startActivity(i);
-                } else {
-                    Toast.makeText(SignUpActivity.this, "Register Failed", Toast.LENGTH_SHORT).show();
-                }
 
-*/
             }
         });
 
