@@ -45,7 +45,7 @@ import java.util.Map;
 
 public class SearchMeals extends AppCompatActivity {
 
-    //Nutritionix API endpoint to POST request
+    //Nutritionix API endpoint to GET request
     private final String API_KEY = "04acd8e6306dab67348abc29d00a7919";
     private final String APP_ID = "e3e88668";
     private final String ingredientsURL = "https://trackapi.nutritionix.com/v2/natural/nutrients";
